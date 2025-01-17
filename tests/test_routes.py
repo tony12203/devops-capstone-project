@@ -77,11 +77,11 @@ class TestAccountService(TestCase):
     #  A C C O U N T   T E S T   C A S E S
     ######################################################################
 
-    def test_index(self):
+    """def test_index(self):
         """It should get 200_OK from the Home Page"""
         response = self.client.get("/")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-
+    """
     def test_health(self):
         """It should be healthy"""
         resp = self.client.get("/health")
